@@ -1,0 +1,14 @@
+{
+ "batches": 171,
+ "gate_lemmas": 84769,
+ "output_lemmas": 256,
+ "new_gate_nodes": 96273,
+ "twinned_gate_nodes": 84769,
+ "interior_untwinned": 11504,
+ "dead_nodes": 0,
+ "total_free_vars_over_batches": 238109,
+ "proof_bytes_total": 785737306,
+ "errors": [],
+ "n_errors": 0
+}
+compose_exit=0

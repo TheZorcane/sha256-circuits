@@ -1,0 +1,7 @@
+# outputs of reproduce.sh and the proof runs
+out/
+*.lrat
+*.cnf
+__pycache__/
+*.pyc
+.DS_Store

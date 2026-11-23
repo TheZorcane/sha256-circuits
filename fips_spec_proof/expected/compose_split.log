@@ -1,0 +1,1365 @@
+# run_saw: <artifact>/fips_spec_proof/build/compose_split.saw budget=3600s start=2026-11-20 16:18:35
+Loading file "compose_split.saw"
+Loading file "<artifact>/fips_spec_proof/saw/compose.saw"
+Loading file "<artifact>/fips_spec_proof/saw/../saw/bridge_lengths.saw"
+== variant split
+sanity: FIPS 180-4 'abc' (padded block 61626380 00..00 00000018) through every function
+sanity OK
+W_I: forall 512-bit blocks b. I::composed b == SHAI::processBlock_Common IV b
+Calling Yices to check sat
+Running check sat
+Time: 0.305292s
+PROVED W_I
+B_S: forall 447-bit messages m. SPEC::hash m == S::composed (pad m)
+Calling Yices to check sat
+Running check sat
+Time: 0.142507s
+PROVED B_S
+B_S for every message length L = 0..447 (all one-block messages)
+Calling Yices to check sat
+Running check sat
+PROVED B_S_0
+Calling Yices to check sat
+Running check sat
+PROVED B_S_1
+Calling Yices to check sat
+Running check sat
+PROVED B_S_2
+Calling Yices to check sat
+Running check sat
+PROVED B_S_3
+Calling Yices to check sat
+Running check sat
+PROVED B_S_4
+Calling Yices to check sat
+Running check sat
+PROVED B_S_5
+Calling Yices to check sat
+Running check sat
+PROVED B_S_6
+Calling Yices to check sat
+Running check sat
+PROVED B_S_7
+Calling Yices to check sat
+Running check sat
+PROVED B_S_8
+Calling Yices to check sat
+Running check sat
+PROVED B_S_9
+Calling Yices to check sat
+Running check sat
+PROVED B_S_10
+Calling Yices to check sat
+Running check sat
+PROVED B_S_11
+Calling Yices to check sat
+Running check sat
+PROVED B_S_12
+Calling Yices to check sat
+Running check sat
+PROVED B_S_13
+Calling Yices to check sat
+Running check sat
+PROVED B_S_14
+Calling Yices to check sat
+Running check sat
+PROVED B_S_15
+Calling Yices to check sat
+Running check sat
+PROVED B_S_16
+Calling Yices to check sat
+Running check sat
+PROVED B_S_17
+Calling Yices to check sat
+Running check sat
+PROVED B_S_18
+Calling Yices to check sat
+Running check sat
+PROVED B_S_19
+Calling Yices to check sat
+Running check sat
+PROVED B_S_20
+Calling Yices to check sat
+Running check sat
+PROVED B_S_21
+Calling Yices to check sat
+Running check sat
+PROVED B_S_22
+Calling Yices to check sat
+Running check sat
+PROVED B_S_23
+Calling Yices to check sat
+Running check sat
+PROVED B_S_24
+Calling Yices to check sat
+Running check sat
+PROVED B_S_25
+Calling Yices to check sat
+Running check sat
+PROVED B_S_26
+Calling Yices to check sat
+Running check sat
+PROVED B_S_27
+Calling Yices to check sat
+Running check sat
+PROVED B_S_28
+Calling Yices to check sat
+Running check sat
+PROVED B_S_29
+Calling Yices to check sat
+Running check sat
+PROVED B_S_30
+Calling Yices to check sat
+Running check sat
+PROVED B_S_31
+Calling Yices to check sat
+Running check sat
+PROVED B_S_32
+Calling Yices to check sat
+Running check sat
+PROVED B_S_33
+Calling Yices to check sat
+Running check sat
+PROVED B_S_34
+Calling Yices to check sat
+Running check sat
+PROVED B_S_35
+Calling Yices to check sat
+Running check sat
+PROVED B_S_36
+Calling Yices to check sat
+Running check sat
+PROVED B_S_37
+Calling Yices to check sat
+Running check sat
+PROVED B_S_38
+Calling Yices to check sat
+Running check sat
+PROVED B_S_39
+Calling Yices to check sat
+Running check sat
+PROVED B_S_40
+Calling Yices to check sat
+Running check sat
+PROVED B_S_41
+Calling Yices to check sat
+Running check sat
+PROVED B_S_42
+Calling Yices to check sat
+Running check sat
+PROVED B_S_43
+Calling Yices to check sat
+Running check sat
+PROVED B_S_44
+Calling Yices to check sat
+Running check sat
+PROVED B_S_45
+Calling Yices to check sat
+Running check sat
+PROVED B_S_46
+Calling Yices to check sat
+Running check sat
+PROVED B_S_47
+Calling Yices to check sat
+Running check sat
+PROVED B_S_48
+Calling Yices to check sat
+Running check sat
+PROVED B_S_49
+Calling Yices to check sat
+Running check sat
+PROVED B_S_50
+Calling Yices to check sat
+Running check sat
+PROVED B_S_51
+Calling Yices to check sat
+Running check sat
+PROVED B_S_52
+Calling Yices to check sat
+Running check sat
+PROVED B_S_53
+Calling Yices to check sat
+Running check sat
+PROVED B_S_54
+Calling Yices to check sat
+Running check sat
+PROVED B_S_55
+Calling Yices to check sat
+Running check sat
+PROVED B_S_56
+Calling Yices to check sat
+Running check sat
+PROVED B_S_57
+Calling Yices to check sat
+Running check sat
+PROVED B_S_58
+Calling Yices to check sat
+Running check sat
+PROVED B_S_59
+Calling Yices to check sat
+Running check sat
+PROVED B_S_60
+Calling Yices to check sat
+Running check sat
+PROVED B_S_61
+Calling Yices to check sat
+Running check sat
+PROVED B_S_62
+Calling Yices to check sat
+Running check sat
+PROVED B_S_63
+Calling Yices to check sat
+Running check sat
+PROVED B_S_64
+Calling Yices to check sat
+Running check sat
+PROVED B_S_65
+Calling Yices to check sat
+Running check sat
+PROVED B_S_66
+Calling Yices to check sat
+Running check sat
+PROVED B_S_67
+Calling Yices to check sat
+Running check sat
+PROVED B_S_68
+Calling Yices to check sat
+Running check sat
+PROVED B_S_69
+Calling Yices to check sat
+Running check sat
+PROVED B_S_70
+Calling Yices to check sat
+Running check sat
+PROVED B_S_71
+Calling Yices to check sat
+Running check sat
+PROVED B_S_72
+Calling Yices to check sat
+Running check sat
+PROVED B_S_73
+Calling Yices to check sat
+Running check sat
+PROVED B_S_74
+Calling Yices to check sat
+Running check sat
+PROVED B_S_75
+Calling Yices to check sat
+Running check sat
+PROVED B_S_76
+Calling Yices to check sat
+Running check sat
+PROVED B_S_77
+Calling Yices to check sat
+Running check sat
+PROVED B_S_78
+Calling Yices to check sat
+Running check sat
+PROVED B_S_79
+Calling Yices to check sat
+Running check sat
+PROVED B_S_80
+Calling Yices to check sat
+Running check sat
+PROVED B_S_81
+Calling Yices to check sat
+Running check sat
+PROVED B_S_82
+Calling Yices to check sat
+Running check sat
+PROVED B_S_83
+Calling Yices to check sat
+Running check sat
+PROVED B_S_84
+Calling Yices to check sat
+Running check sat
+PROVED B_S_85
+Calling Yices to check sat
+Running check sat
+PROVED B_S_86
+Calling Yices to check sat
+Running check sat
+PROVED B_S_87
+Calling Yices to check sat
+Running check sat
+PROVED B_S_88
+Calling Yices to check sat
+Running check sat
+PROVED B_S_89
+Calling Yices to check sat
+Running check sat
+PROVED B_S_90
+Calling Yices to check sat
+Running check sat
+PROVED B_S_91
+Calling Yices to check sat
+Running check sat
+PROVED B_S_92
+Calling Yices to check sat
+Running check sat
+PROVED B_S_93
+Calling Yices to check sat
+Running check sat
+PROVED B_S_94
+Calling Yices to check sat
+Running check sat
+PROVED B_S_95
+Calling Yices to check sat
+Running check sat
+PROVED B_S_96
+Calling Yices to check sat
+Running check sat
+PROVED B_S_97
+Calling Yices to check sat
+Running check sat
+PROVED B_S_98
+Calling Yices to check sat
+Running check sat
+PROVED B_S_99
+Calling Yices to check sat
+Running check sat
+PROVED B_S_100
+Calling Yices to check sat
+Running check sat
+PROVED B_S_101
+Calling Yices to check sat
+Running check sat
+PROVED B_S_102
+Calling Yices to check sat
+Running check sat
+PROVED B_S_103
+Calling Yices to check sat
+Running check sat
+PROVED B_S_104
+Calling Yices to check sat
+Running check sat
+PROVED B_S_105
+Calling Yices to check sat
+Running check sat
+PROVED B_S_106
+Calling Yices to check sat
+Running check sat
+PROVED B_S_107
+Calling Yices to check sat
+Running check sat
+PROVED B_S_108
+Calling Yices to check sat
+Running check sat
+PROVED B_S_109
+Calling Yices to check sat
+Running check sat
+PROVED B_S_110
+Calling Yices to check sat
+Running check sat
+PROVED B_S_111
+Calling Yices to check sat
+Running check sat
+PROVED B_S_112
+Calling Yices to check sat
+Running check sat
+PROVED B_S_113
+Calling Yices to check sat
+Running check sat
+PROVED B_S_114
+Calling Yices to check sat
+Running check sat
+PROVED B_S_115
+Calling Yices to check sat
+Running check sat
+PROVED B_S_116
+Calling Yices to check sat
+Running check sat
+PROVED B_S_117
+Calling Yices to check sat
+Running check sat
+PROVED B_S_118
+Calling Yices to check sat
+Running check sat
+PROVED B_S_119
+Calling Yices to check sat
+Running check sat
+PROVED B_S_120
+Calling Yices to check sat
+Running check sat
+PROVED B_S_121
+Calling Yices to check sat
+Running check sat
+PROVED B_S_122
+Calling Yices to check sat
+Running check sat
+PROVED B_S_123
+Calling Yices to check sat
+Running check sat
+PROVED B_S_124
+Calling Yices to check sat
+Running check sat
+PROVED B_S_125
+Calling Yices to check sat
+Running check sat
+PROVED B_S_126
+Calling Yices to check sat
+Running check sat
+PROVED B_S_127
+Calling Yices to check sat
+Running check sat
+PROVED B_S_128
+Calling Yices to check sat
+Running check sat
+PROVED B_S_129
+Calling Yices to check sat
+Running check sat
+PROVED B_S_130
+Calling Yices to check sat
+Running check sat
+PROVED B_S_131
+Calling Yices to check sat
+Running check sat
+PROVED B_S_132
+Calling Yices to check sat
+Running check sat
+PROVED B_S_133
+Calling Yices to check sat
+Running check sat
+PROVED B_S_134
+Calling Yices to check sat
+Running check sat
+PROVED B_S_135
+Calling Yices to check sat
+Running check sat
+PROVED B_S_136
+Calling Yices to check sat
+Running check sat
+PROVED B_S_137
+Calling Yices to check sat
+Running check sat
+PROVED B_S_138
+Calling Yices to check sat
+Running check sat
+PROVED B_S_139
+Calling Yices to check sat
+Running check sat
+PROVED B_S_140
+Calling Yices to check sat
+Running check sat
+PROVED B_S_141
+Calling Yices to check sat
+Running check sat
+PROVED B_S_142
+Calling Yices to check sat
+Running check sat
+PROVED B_S_143
+Calling Yices to check sat
+Running check sat
+PROVED B_S_144
+Calling Yices to check sat
+Running check sat
+PROVED B_S_145
+Calling Yices to check sat
+Running check sat
+PROVED B_S_146
+Calling Yices to check sat
+Running check sat
+PROVED B_S_147
+Calling Yices to check sat
+Running check sat
+PROVED B_S_148
+Calling Yices to check sat
+Running check sat
+PROVED B_S_149
+Calling Yices to check sat
+Running check sat
+PROVED B_S_150
+Calling Yices to check sat
+Running check sat
+PROVED B_S_151
+Calling Yices to check sat
+Running check sat
+PROVED B_S_152
+Calling Yices to check sat
+Running check sat
+PROVED B_S_153
+Calling Yices to check sat
+Running check sat
+PROVED B_S_154
+Calling Yices to check sat
+Running check sat
+PROVED B_S_155
+Calling Yices to check sat
+Running check sat
+PROVED B_S_156
+Calling Yices to check sat
+Running check sat
+PROVED B_S_157
+Calling Yices to check sat
+Running check sat
+PROVED B_S_158
+Calling Yices to check sat
+Running check sat
+PROVED B_S_159
+Calling Yices to check sat
+Running check sat
+PROVED B_S_160
+Calling Yices to check sat
+Running check sat
+PROVED B_S_161
+Calling Yices to check sat
+Running check sat
+PROVED B_S_162
+Calling Yices to check sat
+Running check sat
+PROVED B_S_163
+Calling Yices to check sat
+Running check sat
+PROVED B_S_164
+Calling Yices to check sat
+Running check sat
+PROVED B_S_165
+Calling Yices to check sat
+Running check sat
+PROVED B_S_166
+Calling Yices to check sat
+Running check sat
+PROVED B_S_167
+Calling Yices to check sat
+Running check sat
+PROVED B_S_168
+Calling Yices to check sat
+Running check sat
+PROVED B_S_169
+Calling Yices to check sat
+Running check sat
+PROVED B_S_170
+Calling Yices to check sat
+Running check sat
+PROVED B_S_171
+Calling Yices to check sat
+Running check sat
+PROVED B_S_172
+Calling Yices to check sat
+Running check sat
+PROVED B_S_173
+Calling Yices to check sat
+Running check sat
+PROVED B_S_174
+Calling Yices to check sat
+Running check sat
+PROVED B_S_175
+Calling Yices to check sat
+Running check sat
+PROVED B_S_176
+Calling Yices to check sat
+Running check sat
+PROVED B_S_177
+Calling Yices to check sat
+Running check sat
+PROVED B_S_178
+Calling Yices to check sat
+Running check sat
+PROVED B_S_179
+Calling Yices to check sat
+Running check sat
+PROVED B_S_180
+Calling Yices to check sat
+Running check sat
+PROVED B_S_181
+Calling Yices to check sat
+Running check sat
+PROVED B_S_182
+Calling Yices to check sat
+Running check sat
+PROVED B_S_183
+Calling Yices to check sat
+Running check sat
+PROVED B_S_184
+Calling Yices to check sat
+Running check sat
+PROVED B_S_185
+Calling Yices to check sat
+Running check sat
+PROVED B_S_186
+Calling Yices to check sat
+Running check sat
+PROVED B_S_187
+Calling Yices to check sat
+Running check sat
+PROVED B_S_188
+Calling Yices to check sat
+Running check sat
+PROVED B_S_189
+Calling Yices to check sat
+Running check sat
+PROVED B_S_190
+Calling Yices to check sat
+Running check sat
+PROVED B_S_191
+Calling Yices to check sat
+Running check sat
+PROVED B_S_192
+Calling Yices to check sat
+Running check sat
+PROVED B_S_193
+Calling Yices to check sat
+Running check sat
+PROVED B_S_194
+Calling Yices to check sat
+Running check sat
+PROVED B_S_195
+Calling Yices to check sat
+Running check sat
+PROVED B_S_196
+Calling Yices to check sat
+Running check sat
+PROVED B_S_197
+Calling Yices to check sat
+Running check sat
+PROVED B_S_198
+Calling Yices to check sat
+Running check sat
+PROVED B_S_199
+Calling Yices to check sat
+Running check sat
+PROVED B_S_200
+Calling Yices to check sat
+Running check sat
+PROVED B_S_201
+Calling Yices to check sat
+Running check sat
+PROVED B_S_202
+Calling Yices to check sat
+Running check sat
+PROVED B_S_203
+Calling Yices to check sat
+Running check sat
+PROVED B_S_204
+Calling Yices to check sat
+Running check sat
+PROVED B_S_205
+Calling Yices to check sat
+Running check sat
+PROVED B_S_206
+Calling Yices to check sat
+Running check sat
+PROVED B_S_207
+Calling Yices to check sat
+Running check sat
+PROVED B_S_208
+Calling Yices to check sat
+Running check sat
+PROVED B_S_209
+Calling Yices to check sat
+Running check sat
+PROVED B_S_210
+Calling Yices to check sat
+Running check sat
+PROVED B_S_211
+Calling Yices to check sat
+Running check sat
+PROVED B_S_212
+Calling Yices to check sat
+Running check sat
+PROVED B_S_213
+Calling Yices to check sat
+Running check sat
+PROVED B_S_214
+Calling Yices to check sat
+Running check sat
+PROVED B_S_215
+Calling Yices to check sat
+Running check sat
+PROVED B_S_216
+Calling Yices to check sat
+Running check sat
+PROVED B_S_217
+Calling Yices to check sat
+Running check sat
+PROVED B_S_218
+Calling Yices to check sat
+Running check sat
+PROVED B_S_219
+Calling Yices to check sat
+Running check sat
+PROVED B_S_220
+Calling Yices to check sat
+Running check sat
+PROVED B_S_221
+Calling Yices to check sat
+Running check sat
+PROVED B_S_222
+Calling Yices to check sat
+Running check sat
+PROVED B_S_223
+Calling Yices to check sat
+Running check sat
+PROVED B_S_224
+Calling Yices to check sat
+Running check sat
+PROVED B_S_225
+Calling Yices to check sat
+Running check sat
+PROVED B_S_226
+Calling Yices to check sat
+Running check sat
+PROVED B_S_227
+Calling Yices to check sat
+Running check sat
+PROVED B_S_228
+Calling Yices to check sat
+Running check sat
+PROVED B_S_229
+Calling Yices to check sat
+Running check sat
+PROVED B_S_230
+Calling Yices to check sat
+Running check sat
+PROVED B_S_231
+Calling Yices to check sat
+Running check sat
+PROVED B_S_232
+Calling Yices to check sat
+Running check sat
+PROVED B_S_233
+Calling Yices to check sat
+Running check sat
+PROVED B_S_234
+Calling Yices to check sat
+Running check sat
+PROVED B_S_235
+Calling Yices to check sat
+Running check sat
+PROVED B_S_236
+Calling Yices to check sat
+Running check sat
+PROVED B_S_237
+Calling Yices to check sat
+Running check sat
+PROVED B_S_238
+Calling Yices to check sat
+Running check sat
+PROVED B_S_239
+Calling Yices to check sat
+Running check sat
+PROVED B_S_240
+Calling Yices to check sat
+Running check sat
+PROVED B_S_241
+Calling Yices to check sat
+Running check sat
+PROVED B_S_242
+Calling Yices to check sat
+Running check sat
+PROVED B_S_243
+Calling Yices to check sat
+Running check sat
+PROVED B_S_244
+Calling Yices to check sat
+Running check sat
+PROVED B_S_245
+Calling Yices to check sat
+Running check sat
+PROVED B_S_246
+Calling Yices to check sat
+Running check sat
+PROVED B_S_247
+Calling Yices to check sat
+Running check sat
+PROVED B_S_248
+Calling Yices to check sat
+Running check sat
+PROVED B_S_249
+Calling Yices to check sat
+Running check sat
+PROVED B_S_250
+Calling Yices to check sat
+Running check sat
+PROVED B_S_251
+Calling Yices to check sat
+Running check sat
+PROVED B_S_252
+Calling Yices to check sat
+Running check sat
+PROVED B_S_253
+Calling Yices to check sat
+Running check sat
+PROVED B_S_254
+Calling Yices to check sat
+Running check sat
+PROVED B_S_255
+Calling Yices to check sat
+Running check sat
+PROVED B_S_256
+Calling Yices to check sat
+Running check sat
+PROVED B_S_257
+Calling Yices to check sat
+Running check sat
+PROVED B_S_258
+Calling Yices to check sat
+Running check sat
+PROVED B_S_259
+Calling Yices to check sat
+Running check sat
+PROVED B_S_260
+Calling Yices to check sat
+Running check sat
+PROVED B_S_261
+Calling Yices to check sat
+Running check sat
+PROVED B_S_262
+Calling Yices to check sat
+Running check sat
+PROVED B_S_263
+Calling Yices to check sat
+Running check sat
+PROVED B_S_264
+Calling Yices to check sat
+Running check sat
+PROVED B_S_265
+Calling Yices to check sat
+Running check sat
+PROVED B_S_266
+Calling Yices to check sat
+Running check sat
+PROVED B_S_267
+Calling Yices to check sat
+Running check sat
+PROVED B_S_268
+Calling Yices to check sat
+Running check sat
+PROVED B_S_269
+Calling Yices to check sat
+Running check sat
+PROVED B_S_270
+Calling Yices to check sat
+Running check sat
+PROVED B_S_271
+Calling Yices to check sat
+Running check sat
+PROVED B_S_272
+Calling Yices to check sat
+Running check sat
+PROVED B_S_273
+Calling Yices to check sat
+Running check sat
+PROVED B_S_274
+Calling Yices to check sat
+Running check sat
+PROVED B_S_275
+Calling Yices to check sat
+Running check sat
+PROVED B_S_276
+Calling Yices to check sat
+Running check sat
+PROVED B_S_277
+Calling Yices to check sat
+Running check sat
+PROVED B_S_278
+Calling Yices to check sat
+Running check sat
+PROVED B_S_279
+Calling Yices to check sat
+Running check sat
+PROVED B_S_280
+Calling Yices to check sat
+Running check sat
+PROVED B_S_281
+Calling Yices to check sat
+Running check sat
+PROVED B_S_282
+Calling Yices to check sat
+Running check sat
+PROVED B_S_283
+Calling Yices to check sat
+Running check sat
+PROVED B_S_284
+Calling Yices to check sat
+Running check sat
+PROVED B_S_285
+Calling Yices to check sat
+Running check sat
+PROVED B_S_286
+Calling Yices to check sat
+Running check sat
+PROVED B_S_287
+Calling Yices to check sat
+Running check sat
+PROVED B_S_288
+Calling Yices to check sat
+Running check sat
+PROVED B_S_289
+Calling Yices to check sat
+Running check sat
+PROVED B_S_290
+Calling Yices to check sat
+Running check sat
+PROVED B_S_291
+Calling Yices to check sat
+Running check sat
+PROVED B_S_292
+Calling Yices to check sat
+Running check sat
+PROVED B_S_293
+Calling Yices to check sat
+Running check sat
+PROVED B_S_294
+Calling Yices to check sat
+Running check sat
+PROVED B_S_295
+Calling Yices to check sat
+Running check sat
+PROVED B_S_296
+Calling Yices to check sat
+Running check sat
+PROVED B_S_297
+Calling Yices to check sat
+Running check sat
+PROVED B_S_298
+Calling Yices to check sat
+Running check sat
+PROVED B_S_299
+Calling Yices to check sat
+Running check sat
+PROVED B_S_300
+Calling Yices to check sat
+Running check sat
+PROVED B_S_301
+Calling Yices to check sat
+Running check sat
+PROVED B_S_302
+Calling Yices to check sat
+Running check sat
+PROVED B_S_303
+Calling Yices to check sat
+Running check sat
+PROVED B_S_304
+Calling Yices to check sat
+Running check sat
+PROVED B_S_305
+Calling Yices to check sat
+Running check sat
+PROVED B_S_306
+Calling Yices to check sat
+Running check sat
+PROVED B_S_307
+Calling Yices to check sat
+Running check sat
+PROVED B_S_308
+Calling Yices to check sat
+Running check sat
+PROVED B_S_309
+Calling Yices to check sat
+Running check sat
+PROVED B_S_310
+Calling Yices to check sat
+Running check sat
+PROVED B_S_311
+Calling Yices to check sat
+Running check sat
+PROVED B_S_312
+Calling Yices to check sat
+Running check sat
+PROVED B_S_313
+Calling Yices to check sat
+Running check sat
+PROVED B_S_314
+Calling Yices to check sat
+Running check sat
+PROVED B_S_315
+Calling Yices to check sat
+Running check sat
+PROVED B_S_316
+Calling Yices to check sat
+Running check sat
+PROVED B_S_317
+Calling Yices to check sat
+Running check sat
+PROVED B_S_318
+Calling Yices to check sat
+Running check sat
+PROVED B_S_319
+Calling Yices to check sat
+Running check sat
+PROVED B_S_320
+Calling Yices to check sat
+Running check sat
+PROVED B_S_321
+Calling Yices to check sat
+Running check sat
+PROVED B_S_322
+Calling Yices to check sat
+Running check sat
+PROVED B_S_323
+Calling Yices to check sat
+Running check sat
+PROVED B_S_324
+Calling Yices to check sat
+Running check sat
+PROVED B_S_325
+Calling Yices to check sat
+Running check sat
+PROVED B_S_326
+Calling Yices to check sat
+Running check sat
+PROVED B_S_327
+Calling Yices to check sat
+Running check sat
+PROVED B_S_328
+Calling Yices to check sat
+Running check sat
+PROVED B_S_329
+Calling Yices to check sat
+Running check sat
+PROVED B_S_330
+Calling Yices to check sat
+Running check sat
+PROVED B_S_331
+Calling Yices to check sat
+Running check sat
+PROVED B_S_332
+Calling Yices to check sat
+Running check sat
+PROVED B_S_333
+Calling Yices to check sat
+Running check sat
+PROVED B_S_334
+Calling Yices to check sat
+Running check sat
+PROVED B_S_335
+Calling Yices to check sat
+Running check sat
+PROVED B_S_336
+Calling Yices to check sat
+Running check sat
+PROVED B_S_337
+Calling Yices to check sat
+Running check sat
+PROVED B_S_338
+Calling Yices to check sat
+Running check sat
+PROVED B_S_339
+Calling Yices to check sat
+Running check sat
+PROVED B_S_340
+Calling Yices to check sat
+Running check sat
+PROVED B_S_341
+Calling Yices to check sat
+Running check sat
+PROVED B_S_342
+Calling Yices to check sat
+Running check sat
+PROVED B_S_343
+Calling Yices to check sat
+Running check sat
+PROVED B_S_344
+Calling Yices to check sat
+Running check sat
+PROVED B_S_345
+Calling Yices to check sat
+Running check sat
+PROVED B_S_346
+Calling Yices to check sat
+Running check sat
+PROVED B_S_347
+Calling Yices to check sat
+Running check sat
+PROVED B_S_348
+Calling Yices to check sat
+Running check sat
+PROVED B_S_349
+Calling Yices to check sat
+Running check sat
+PROVED B_S_350
+Calling Yices to check sat
+Running check sat
+PROVED B_S_351
+Calling Yices to check sat
+Running check sat
+PROVED B_S_352
+Calling Yices to check sat
+Running check sat
+PROVED B_S_353
+Calling Yices to check sat
+Running check sat
+PROVED B_S_354
+Calling Yices to check sat
+Running check sat
+PROVED B_S_355
+Calling Yices to check sat
+Running check sat
+PROVED B_S_356
+Calling Yices to check sat
+Running check sat
+PROVED B_S_357
+Calling Yices to check sat
+Running check sat
+PROVED B_S_358
+Calling Yices to check sat
+Running check sat
+PROVED B_S_359
+Calling Yices to check sat
+Running check sat
+PROVED B_S_360
+Calling Yices to check sat
+Running check sat
+PROVED B_S_361
+Calling Yices to check sat
+Running check sat
+PROVED B_S_362
+Calling Yices to check sat
+Running check sat
+PROVED B_S_363
+Calling Yices to check sat
+Running check sat
+PROVED B_S_364
+Calling Yices to check sat
+Running check sat
+PROVED B_S_365
+Calling Yices to check sat
+Running check sat
+PROVED B_S_366
+Calling Yices to check sat
+Running check sat
+PROVED B_S_367
+Calling Yices to check sat
+Running check sat
+PROVED B_S_368
+Calling Yices to check sat
+Running check sat
+PROVED B_S_369
+Calling Yices to check sat
+Running check sat
+PROVED B_S_370
+Calling Yices to check sat
+Running check sat
+PROVED B_S_371
+Calling Yices to check sat
+Running check sat
+PROVED B_S_372
+Calling Yices to check sat
+Running check sat
+PROVED B_S_373
+Calling Yices to check sat
+Running check sat
+PROVED B_S_374
+Calling Yices to check sat
+Running check sat
+PROVED B_S_375
+Calling Yices to check sat
+Running check sat
+PROVED B_S_376
+Calling Yices to check sat
+Running check sat
+PROVED B_S_377
+Calling Yices to check sat
+Running check sat
+PROVED B_S_378
+Calling Yices to check sat
+Running check sat
+PROVED B_S_379
+Calling Yices to check sat
+Running check sat
+PROVED B_S_380
+Calling Yices to check sat
+Running check sat
+PROVED B_S_381
+Calling Yices to check sat
+Running check sat
+PROVED B_S_382
+Calling Yices to check sat
+Running check sat
+PROVED B_S_383
+Calling Yices to check sat
+Running check sat
+PROVED B_S_384
+Calling Yices to check sat
+Running check sat
+PROVED B_S_385
+Calling Yices to check sat
+Running check sat
+PROVED B_S_386
+Calling Yices to check sat
+Running check sat
+PROVED B_S_387
+Calling Yices to check sat
+Running check sat
+PROVED B_S_388
+Calling Yices to check sat
+Running check sat
+PROVED B_S_389
+Calling Yices to check sat
+Running check sat
+PROVED B_S_390
+Calling Yices to check sat
+Running check sat
+PROVED B_S_391
+Calling Yices to check sat
+Running check sat
+PROVED B_S_392
+Calling Yices to check sat
+Running check sat
+PROVED B_S_393
+Calling Yices to check sat
+Running check sat
+PROVED B_S_394
+Calling Yices to check sat
+Running check sat
+PROVED B_S_395
+Calling Yices to check sat
+Running check sat
+PROVED B_S_396
+Calling Yices to check sat
+Running check sat
+PROVED B_S_397
+Calling Yices to check sat
+Running check sat
+PROVED B_S_398
+Calling Yices to check sat
+Running check sat
+PROVED B_S_399
+Calling Yices to check sat
+Running check sat
+PROVED B_S_400
+Calling Yices to check sat
+Running check sat
+PROVED B_S_401
+Calling Yices to check sat
+Running check sat
+PROVED B_S_402
+Calling Yices to check sat
+Running check sat
+PROVED B_S_403
+Calling Yices to check sat
+Running check sat
+PROVED B_S_404
+Calling Yices to check sat
+Running check sat
+PROVED B_S_405
+Calling Yices to check sat
+Running check sat
+PROVED B_S_406
+Calling Yices to check sat
+Running check sat
+PROVED B_S_407
+Calling Yices to check sat
+Running check sat
+PROVED B_S_408
+Calling Yices to check sat
+Running check sat
+PROVED B_S_409
+Calling Yices to check sat
+Running check sat
+PROVED B_S_410
+Calling Yices to check sat
+Running check sat
+PROVED B_S_411
+Calling Yices to check sat
+Running check sat
+PROVED B_S_412
+Calling Yices to check sat
+Running check sat
+PROVED B_S_413
+Calling Yices to check sat
+Running check sat
+PROVED B_S_414
+Calling Yices to check sat
+Running check sat
+PROVED B_S_415
+Calling Yices to check sat
+Running check sat
+PROVED B_S_416
+Calling Yices to check sat
+Running check sat
+PROVED B_S_417
+Calling Yices to check sat
+Running check sat
+PROVED B_S_418
+Calling Yices to check sat
+Running check sat
+PROVED B_S_419
+Calling Yices to check sat
+Running check sat
+PROVED B_S_420
+Calling Yices to check sat
+Running check sat
+PROVED B_S_421
+Calling Yices to check sat
+Running check sat
+PROVED B_S_422
+Calling Yices to check sat
+Running check sat
+PROVED B_S_423
+Calling Yices to check sat
+Running check sat
+PROVED B_S_424
+Calling Yices to check sat
+Running check sat
+PROVED B_S_425
+Calling Yices to check sat
+Running check sat
+PROVED B_S_426
+Calling Yices to check sat
+Running check sat
+PROVED B_S_427
+Calling Yices to check sat
+Running check sat
+PROVED B_S_428
+Calling Yices to check sat
+Running check sat
+PROVED B_S_429
+Calling Yices to check sat
+Running check sat
+PROVED B_S_430
+Calling Yices to check sat
+Running check sat
+PROVED B_S_431
+Calling Yices to check sat
+Running check sat
+PROVED B_S_432
+Calling Yices to check sat
+Running check sat
+PROVED B_S_433
+Calling Yices to check sat
+Running check sat
+PROVED B_S_434
+Calling Yices to check sat
+Running check sat
+PROVED B_S_435
+Calling Yices to check sat
+Running check sat
+PROVED B_S_436
+Calling Yices to check sat
+Running check sat
+PROVED B_S_437
+Calling Yices to check sat
+Running check sat
+PROVED B_S_438
+Calling Yices to check sat
+Running check sat
+PROVED B_S_439
+Calling Yices to check sat
+Running check sat
+PROVED B_S_440
+Calling Yices to check sat
+Running check sat
+PROVED B_S_441
+Calling Yices to check sat
+Running check sat
+PROVED B_S_442
+Calling Yices to check sat
+Running check sat
+PROVED B_S_443
+Calling Yices to check sat
+Running check sat
+PROVED B_S_444
+Calling Yices to check sat
+Running check sat
+PROVED B_S_445
+Calling Yices to check sat
+Running check sat
+PROVED B_S_446
+Calling Yices to check sat
+Running check sat
+PROVED B_S_447
+PROVED B_S_ALL_LENGTHS
+
+# run_saw: exit=0 wall=56.6s

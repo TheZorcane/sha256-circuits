@@ -1,0 +1,32 @@
+// Composition + spec theorems for one verifier variant.  Included by compose_<var>.saw (written by run.sh), which
+// first imports Lemmas_<var>_S.cry as S and Lemmas_<var>_I.cry as I and sets `var`.
+enable_what4_hash_consing;
+import "Primitive/Keyless/Hash/SHA2Internal/SHA256.cry" as SHAI;
+import "Primitive/Keyless/Hash/SHA2/Instantiations/SHA256.cry" as SPEC;
+
+print (str_concat "== variant " var);
+
+print "sanity: FIPS 180-4 'abc' (padded block 61626380 00..00 00000018) through every function";
+let abcblk = {{ 0x61626380 # (zero : [448]) # 0x00000018 }};
+let abcdig = {{ 0xba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad }};
+prove_print rme {{ SPEC::hash (join "abc") == abcdig }};
+prove_print rme {{ join (SHAI::processBlock_Common SHAI::SHAH0 (split abcblk)) == abcdig }};
+prove_print rme {{ join (S::composed (split abcblk)) == abcdig }};
+prove_print rme {{ join (I::composed (split abcblk)) == abcdig }};
+print "sanity OK";
+
+print "W_I: forall 512-bit blocks b. I::composed b == SHAI::processBlock_Common IV b";
+time (prove_print (w4_unint_yices []) {{ \(b : [512]) -> I::composed (split b) == SHAI::processBlock_Common SHAI::SHAH0 (split b) }});
+print "PROVED W_I";
+
+
+print "B_S: forall 447-bit messages m. SPEC::hash m == S::composed (pad m)";
+time (prove_print (w4_unint_yices []) {{ \(m : [447]) -> SPEC::hash m == join (S::composed (split (((m # 0b1) # (zero : [0])) # (447 : [64])))) }});
+print "PROVED B_S";
+
+// W_SI (S::composed == I::composed on all blocks) is NOT attempted: yices does not finish it in reasonable
+// time, because SAW renders SHA2Internal's S0/S1/s0/s1/Ch/Maj bit-by-bit; it is not needed (see README.md).
+
+print "B_S for every message length L = 0..447 (all one-block messages)";
+include "../saw/bridge_lengths.saw";
+print "PROVED B_S_ALL_LENGTHS";

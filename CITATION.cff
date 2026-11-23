@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use these circuits or tools, please cite the paper and this artifact."
+title: "Artifact: Smaller verified Boolean circuits for SHA-256"
+type: software
+authors:
+  - family-names: Rosenbaum
+    given-names: Ido
+version: "1.0.0"
+date-released: 2026-11-23
+license: [MIT, CC-BY-4.0]
+keywords:
+  - SHA-256
+  - Boolean circuits
+  - multiplicative complexity
+  - secure computation
+  - formal verification
+preferred-citation:
+  type: article
+  title: "Smaller verified Boolean circuits for SHA-256"
+  authors:
+    - family-names: Rosenbaum
+      given-names: Ido
+  year: 2026
+  notes: "IACR Cryptology ePrint Archive (identifier to be added at posting)"

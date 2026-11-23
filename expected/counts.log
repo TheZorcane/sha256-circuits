@@ -1,0 +1,11 @@
+sha256_compress_96273.xag                        AND  21783 XOR  74490 total  96273 depth  9832 AND-depth 1604 canonical=yes OK
+sha256_compress_96324.xag                        AND  21746 XOR  74578 total  96324 depth  9932 AND-depth 1604 canonical=yes OK
+sha256_compress_100658.xag                       AND  21745 XOR  78913 total 100658 depth  5876 AND-depth 1604 canonical=yes OK
+proofbase/sha256_compress_96273_proofbase.xag    AND  21783 XOR  77847 total  99630 depth  9992 AND-depth 1604 canonical=yes OK
+proofbase/sha256_compress_96324_proofbase.xag    AND  21746 XOR  77923 total  99669 depth 10027 AND-depth 1604 canonical=yes OK
+proofbase/walk_pass1.xag                         AND  21783 XOR  74491 total  96274 depth  9897 AND-depth 1604 canonical=yes OK
+ports/sha1_compress_49851.xag                    AND  10552 XOR  39299 total  49851 depth  8438 AND-depth 2163 canonical=yes OK
+ports/sha256_var_compress_103669.xag             AND  22293 XOR  81376 total 103669 depth  7370 AND-depth 1607 canonical=yes OK
+sha256_compress_96273.xag                        NOT-counting tally 99035 (2762 NOT) OK
+sha256_compress_96324.xag                        NOT-counting tally 99054 (2730 NOT) OK
+COUNTS OK

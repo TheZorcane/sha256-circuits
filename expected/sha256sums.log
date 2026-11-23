@@ -1,0 +1,13 @@
+circuits/bristol/sha256_compress_100658.bristol: OK
+circuits/bristol/sha256_compress_96273.bristol: OK
+circuits/bristol/sha256_compress_96324.bristol: OK
+circuits/ports/sha1_compress_49851.xag: OK
+circuits/ports/sha256_var_compress_103669.xag: OK
+circuits/proofbase/sha256_compress_96273_proofbase.xag: OK
+circuits/proofbase/sha256_compress_96324_proofbase.xag: OK
+circuits/proofbase/walk_pass1.xag: OK
+circuits/sha256_compress_100658.xag: OK
+circuits/sha256_compress_96273.xag: OK
+circuits/sha256_compress_96324.xag: OK
+generator/joint_sigma_slp_105.txt: OK
+generator/cells.json: OK

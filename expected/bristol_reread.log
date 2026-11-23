@@ -1,0 +1,4 @@
+sha256_compress_96273.bristol                    re-read AND 21783 XOR 74490, sim pass mismatches 0 OK
+sha256_compress_96324.bristol                    re-read AND 21746 XOR 74578, sim pass mismatches 0 OK
+sha256_compress_100658.bristol                   re-read AND 21745 XOR 78913, sim pass mismatches 0 OK
+BRISTOL OK

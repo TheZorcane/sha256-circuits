@@ -1,0 +1,15 @@
+env.txt              cryptol-specs commit 8b74f5fc2b77fc7bbb587ba2217990b1963e9d6c
+gen.log              fragment counts 120/109/110, inline identity, mutant validated
+frags_S_plain.log    exit=0 wall=190.4s proved=120 solver_time_sum=183.1s
+frags_I_plain.log    exit=0 wall=193.5s proved=120 solver_time_sum=186.0s
+frags_S_tail.log     exit=0 wall=275.9s proved=109 solver_time_sum=268.8s
+frags_I_tail.log     exit=0 wall=275.8s proved=109 solver_time_sum=268.9s
+frags_S_split.log    exit=0 wall=195.8s proved=110 solver_time_sum=189.0s
+frags_I_split.log    exit=0 wall=197.6s proved=110 solver_time_sum=190.8s
+compose_plain.log    exit=0 wall=56.7s proved=451 solver_time_sum=0.4s
+compose_tail.log     exit=0 wall=57.0s proved=451 solver_time_sum=0.4s
+compose_split.log    exit=0 wall=56.6s proved=451 solver_time_sum=0.4s
+negative.log         exit=0 wall=1.9s proved=0 solver_time_sum=0.0s
+    NEGATIVE CONTROL OK
+ref_link.log         329 of 329 per-lemma links OK; last line: ALL REF LINKS OK: 329 lemmas
+ALL REQUIRED CHECKS PASSED: 678 fragment theorems, 3 composition and 3 x 449 bridge theorems, negative control, 329 reference links, cryptol-specs 8b74f5fc2b77

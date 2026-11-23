@@ -1,0 +1,17 @@
+{
+ "plain": 120,
+ "tail": 109,
+ "split": 110,
+ "full_reference": {
+  "nodes": 124920,
+  "xag_sha256": "3f05033e43d76edfb4f1746be6e4bc1c423fd2a647b28e5f17edc5b0a87b2014",
+  "identical_to_inlined_fragments_plain": true
+ },
+ "mutant_round_10": {
+  "file": "mutant_round_10.aig",
+  "nodes": 1483,
+  "xag_sha256": "e4b99f760107dea64f6d9387f0ff059fb808fd826c65e785a0a4d91a45582f61",
+  "aig_validated_vs_sim": true,
+  "mutated_node": 532
+ }
+}

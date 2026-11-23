@@ -1,0 +1,15 @@
+{
+ "errors": [],
+ "notes": [],
+ "C1_lemmas": 110,
+ "C5": {
+  "nodes": 99630,
+  "reachable_from_outputs": 99630,
+  "covered_by_cones": 99630,
+  "uncovered": 0,
+  "cone_nodes_not_reachable": 0,
+  "nodes_in_multiple_cones": 6792
+ },
+ "C8_bad": 0,
+ "ok": true
+}

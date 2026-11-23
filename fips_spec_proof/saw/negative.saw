@@ -1,0 +1,22 @@
+// Negative control: round-10 reference fragment with ONE gate changed (AND -> XOR, node index in
+// build/gen_info.json).  The same proof that succeeds for the real fragment must FAIL here with a
+// counterexample; we print it and check it really distinguishes the two functions.
+import "Lemmas_plain_S.cry" as S;
+m <- read_aig "mutant_round_10.aig";
+r <- read_aig "plain/frag/round_10.aig";
+res <- prove yices {{ \(x : [288]) -> m x == S::lem_round_10 x }};
+caseProofResult res
+  (\_ -> do { print "NEGATIVE CONTROL FAILED: mutant was proved equal"; exit 1; })
+  (\cex -> do {
+      print "counterexample found (expected):";
+      print cex;
+      // cex is the counterexample value for x; re-evaluate the circuits at it
+      let x = cex;
+      print "mutant output / spec output / real-fragment output at the counterexample:";
+      print (eval_int {{ m (x : [288]) }});
+      print (eval_int {{ S::lem_round_10 (x : [288]) }});
+      print (eval_int {{ r (x : [288]) }});
+      prove_print rme {{ m (x : [288]) != S::lem_round_10 (x : [288]) }};
+      prove_print rme {{ r (x : [288]) == S::lem_round_10 (x : [288]) }};
+      print "NEGATIVE CONTROL OK: mutant rejected with a genuine counterexample";
+  });

@@ -1,0 +1,80 @@
+{
+  "name": "sched_33",
+  "circuit_a_sha256": "91f8ca5f543f98c4b4a203f5ec82acc098eb844aad3b73fb3c128f8c78e654e7",
+  "circuit_b_sha256": "95ef11903217a6c98ddd0818427a09825876e0e94aa762b939d25a219e1ca37e",
+  "circuit_a_counts": {
+    "AND": 92,
+    "XOR": 506,
+    "total": 598
+  },
+  "circuit_b_counts": {
+    "AND": 278,
+    "XOR": 919,
+    "total": 1197
+  },
+  "interface": "free inputs = non-constant input word-bit slots; outputs = all alt literals of output slots",
+  "cnf_sha256": "1edd6dee89a57cdb8d7f3312554a2cf3ca68f1fc8257c5a1c53ea7dbfd5e9b07",
+  "cnf_vars_clauses": "p cnf 1956 6940",
+  "tools": {
+    "cadical": "2.2.1",
+    "lrat-check": {
+      "used": true,
+      "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "binary_sha256": "24a561223ea0f61618b6d0d6741cc859d35778fb9d1f13c3fa2a183e0f39dd36",
+      "source_sha256": "bf07c2ac96b9035da1ebcc578cb95e956a2b795629d613154cdb307f8a8f4a95"
+    },
+    "drat-trim": {
+      "used": false,
+      "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "binary_sha256": null,
+      "source_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"
+    },
+    "python": "3.12.3"
+  },
+  "timeout_s": 10800.0,
+  "host": "Linux x86_64",
+  "solver_run": {
+    "cmd": [
+      "cadical",
+      "--lrat=true",
+      "--binary=false",
+      "-q",
+      "work/sched_33/sched_33.cnf",
+      "work/sched_33/sched_33.lrat"
+    ],
+    "exit_code": 20,
+    "timed_out": false,
+    "wall_s": 1.528,
+    "peak_rss_bytes": 597471232
+  },
+  "result": "unsat",
+  "proof_sha256": "ec9217bf879356aca808bac9af2a37d1cc3b136c03f29ce688505261a3e5ec0a",
+  "proof_bytes": 19224185,
+  "proof_check": {
+    "accepted": true,
+    "rule": "both checkers must accept",
+    "python_checker": {
+      "checker": "verifier/lrat_check.py (strict RUP-only LRAT)",
+      "accepted": true,
+      "message": "VERIFIED: empty clause 156170 derived (149230 lemmas, 131712 deletions checked)",
+      "wall_s": 1.786
+    },
+    "vendored_lrat_check": {
+      "cmd": [
+        "lrat-check",
+        "work/sched_33/sched_33.cnf",
+        "work/sched_33/sched_33.lrat"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.503,
+      "peak_rss_bytes": 597471232,
+      "verdict_line": "c VERIFIED",
+      "checker": "lrat-check",
+      "format": "LRAT (text)",
+      "accepted": true
+    }
+  },
+  "status": "equivalent",
+  "total_wall_s": 3.844
+}

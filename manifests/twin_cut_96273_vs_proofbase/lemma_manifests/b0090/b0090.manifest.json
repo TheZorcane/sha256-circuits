@@ -1,0 +1,83 @@
+{
+  "name": "b0090",
+  "circuit_a_sha256": "756b495401870c79a44e9538eb483878fef487c0469659a38fdb07ab87d2829f",
+  "circuit_b_sha256": "0ed7ba0c2f7acc622785e9b4cfd0b934808df172454f2ef6b6c1f0130ef5ad75",
+  "circuit_a_counts": {
+    "AND": 445,
+    "XOR": 2175,
+    "total": 2620
+  },
+  "circuit_b_counts": {
+    "AND": 439,
+    "XOR": 2199,
+    "total": 2638
+  },
+  "interface": "identity (both circuits already in the same interface)",
+  "cnf_sha256": "73e047aee91e46b9b3a7a23f7c4312a6f76e17b6b9a3d89a7dfe6d91fab37daa",
+  "cnf_vars_clauses": "p cnf 7221 22150",
+  "tools": {
+    "cadical": "3.1.0",
+    "lrat-check": {
+      "used": true,
+      "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "binary_sha256": "4886ce4fbb0f86df9b3643c935cfbacad7973c2787348809c33443b85031ef53",
+      "source_sha256": "bf07c2ac96b9035da1ebcc578cb95e956a2b795629d613154cdb307f8a8f4a95"
+    },
+    "drat-trim": {
+      "used": false,
+      "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "binary_sha256": "b3c5aecc22d3f47f009dfbaea0f7c4429bcadaba6d918be2292f76025b4e9b2b",
+      "source_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"
+    },
+    "python": "3.15.1"
+  },
+  "timeout_s": 900,
+  "host": "Darwin arm64",
+  "batch": 90,
+  "n_items": 500,
+  "free_vars": 1462,
+  "solver_run": {
+    "cmd": [
+      "cadical",
+      "--lrat=true",
+      "--binary=false",
+      "-q",
+      "work/out/b0090/b0090.cnf",
+      "work/out/b0090/b0090.lrat"
+    ],
+    "exit_code": 20,
+    "timed_out": false,
+    "wall_s": 0.135,
+    "peak_rss_bytes": 23281664
+  },
+  "result": "unsat",
+  "proof_sha256": "d4c9285f33395307882ab97e92a6c84e074f034935d0b08d2cbb56868bcef20a",
+  "proof_bytes": 4042419,
+  "proof_check": {
+    "accepted": true,
+    "rule": "both checkers must accept",
+    "python_checker": {
+      "checker": "verifier/lrat_check.py (strict RUP-only LRAT)",
+      "accepted": true,
+      "message": "VERIFIED: empty clause 103735 derived (81585 lemmas, 94113 deletions checked)",
+      "wall_s": 0.143
+    },
+    "vendored_lrat_check": {
+      "cmd": [
+        "lrat-check",
+        "work/out/b0090/b0090.cnf",
+        "work/out/b0090/b0090.lrat"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.063,
+      "peak_rss_bytes": 37666816,
+      "verdict_line": "c VERIFIED",
+      "checker": "lrat-check",
+      "format": "LRAT (text)",
+      "accepted": true
+    }
+  },
+  "status": "equivalent",
+  "total_wall_s": 0.359
+}

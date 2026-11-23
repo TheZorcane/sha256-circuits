@@ -1,0 +1,66 @@
+0 flipB XOR not_equivalent
+1 flipA XOR not_equivalent
+2 flipA XOR not_equivalent
+3 flipA XOR not_equivalent
+4 pol XOR not_equivalent
+5 flipA XOR not_equivalent
+6 flipA XOR not_equivalent
+7 flipB XOR not_equivalent
+8 flipB XOR not_equivalent
+9 flipA XOR not_equivalent
+10 flipB AND not_equivalent
+11 flipA XOR not_equivalent
+12 pol XOR not_equivalent
+13 flipB XOR not_equivalent
+14 pol AND not_equivalent
+15 flipB XOR not_equivalent
+16 flipA XOR not_equivalent
+17 flipB XOR not_equivalent
+18 flipA AND not_equivalent
+19 flipB XOR not_equivalent
+20 flipA XOR not_equivalent
+21 flipB XOR not_equivalent
+22 flipA XOR not_equivalent
+23 pol AND not_equivalent
+24 flipB XOR not_equivalent
+25 pol XOR not_equivalent
+26 flipB AND not_equivalent
+27 pol AND not_equivalent
+28 flipB XOR not_equivalent
+29 flipA XOR not_equivalent
+30 flipB AND not_equivalent
+31 flipA XOR not_equivalent
+32 flipB XOR not_equivalent
+33 flipB XOR not_equivalent
+34 flipB XOR not_equivalent
+35 flipA AND not_equivalent
+36 flipB XOR not_equivalent
+37 flipA XOR not_equivalent
+38 flipA AND not_equivalent
+39 flipB XOR not_equivalent
+{'not_equivalent': 40, 'other': 0}
+mutant  0 outflip  lincheck rejected  check2 rejected  OK
+mutant  1 outflip  lincheck rejected  check2 rejected  OK
+mutant  2 outflip  lincheck rejected  check2 rejected  OK
+mutant  3 and2xor  lincheck rejected  check2 rejected  OK
+mutant  4 xor2and  lincheck rejected  check2 rejected  OK
+mutant  5 flip     lincheck rejected  check2 rejected  OK
+mutant  6 flip     lincheck rejected  check2 rejected  OK
+mutant  7 flip     lincheck rejected  check2 rejected  OK
+mutant  8 and2xor  lincheck rejected  check2 rejected  OK
+mutant  9 rewire   lincheck rejected  check2 rejected  OK
+mutant 10 xor2and  lincheck rejected  check2 rejected  OK
+mutant 11 outflip  lincheck rejected  check2 rejected  OK
+mutant 12 xor2and  lincheck rejected  check2 rejected  OK
+mutant 13 flip     lincheck rejected  check2 rejected  OK
+mutant 14 flip     lincheck rejected  check2 rejected  OK
+mutant 15 and2xor  lincheck rejected  check2 rejected  OK
+mutant 16 xor2and  lincheck rejected  check2 rejected  OK
+mutant 17 outflip  lincheck rejected  check2 rejected  OK
+mutant 18 and2xor  lincheck rejected  check2 rejected  OK
+mutant 19 flip     lincheck rejected  check2 rejected  OK
+mutant 20 and2xor  lincheck rejected  check2 rejected  OK
+MUTANTS REJECTED: 21 of 21 by both checkers
+twin-cut negative controls: 40 of 40 refuted
+GF(2) mutants: 21 of 21 rejected by both checkers
+NEGATIVE CONTROLS OK

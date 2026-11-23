@@ -1,0 +1,80 @@
+{
+  "name": "round_17",
+  "circuit_a_sha256": "7542f92361a71479b1ff27da2aa6481d21475e127e80d0bfa45ccf97fc755a24",
+  "circuit_b_sha256": "25c5edc3f15bbe700a3f48763f026680a7bc3eb30ccb140840535564b6a94918",
+  "circuit_a_counts": {
+    "AND": 275,
+    "XOR": 991,
+    "total": 1266
+  },
+  "circuit_b_counts": {
+    "AND": 869,
+    "XOR": 1880,
+    "total": 2749
+  },
+  "interface": "free inputs = non-constant input word-bit slots; outputs = all alt literals of output slots",
+  "cnf_sha256": "1084b6413c50913e7bb01b42a5e2fe5273971e82adc2a70e507d8bf30f4d051d",
+  "cnf_vars_clauses": "p cnf 4368 15174",
+  "tools": {
+    "cadical": "3.1.0",
+    "lrat-check": {
+      "used": true,
+      "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "binary_sha256": "4886ce4fbb0f86df9b3643c935cfbacad7973c2787348809c33443b85031ef53",
+      "source_sha256": "bf07c2ac96b9035da1ebcc578cb95e956a2b795629d613154cdb307f8a8f4a95"
+    },
+    "drat-trim": {
+      "used": false,
+      "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "binary_sha256": null,
+      "source_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"
+    },
+    "python": "3.15.1"
+  },
+  "timeout_s": 1800,
+  "host": "Darwin arm64",
+  "solver_run": {
+    "cmd": [
+      "cadical",
+      "--lrat=true",
+      "--binary=false",
+      "-q",
+      "../results/proof_v9/round_17/round_17.cnf",
+      "../results/proof_v9/round_17/round_17.lrat"
+    ],
+    "exit_code": 20,
+    "timed_out": false,
+    "wall_s": 2.044,
+    "peak_rss_bytes": 26886144
+  },
+  "result": "unsat",
+  "proof_sha256": "d59ce44da15685321b01a3b1475f0ba3c263c60e9e9d5f3e9cc02e8832c67ff0",
+  "proof_bytes": 33908187,
+  "proof_check": {
+    "accepted": true,
+    "rule": "both checkers must accept",
+    "python_checker": {
+      "checker": "verifier/lrat_check.py (strict RUP-only LRAT)",
+      "accepted": true,
+      "message": "VERIFIED: empty clause 250063 derived (234889 lemmas, 233993 deletions checked)",
+      "wall_s": 1.759
+    },
+    "vendored_lrat_check": {
+      "cmd": [
+        "lrat-check",
+        "../results/proof_v9/round_17/round_17.cnf",
+        "../results/proof_v9/round_17/round_17.lrat"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.414,
+      "peak_rss_bytes": 37421056,
+      "verdict_line": "c VERIFIED",
+      "checker": "lrat-check",
+      "format": "LRAT (text)",
+      "accepted": true
+    }
+  },
+  "status": "equivalent",
+  "total_wall_s": 4.246
+}

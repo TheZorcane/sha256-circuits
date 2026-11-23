@@ -1,0 +1,8 @@
+b0173 equivalent 0.128 1198982 p cnf 2889 7657
+done 174 batches, bad 0 wall 28.8
+ "total_free_vars_over_batches": 236877,
+ "proof_bytes_total": 736895394,
+ "errors": [],
+ "n_errors": 0
+}
+compose_exit=0

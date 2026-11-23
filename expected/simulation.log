@@ -1,0 +1,8 @@
+sha256_compress_96273.xag                        pass vectors=100004 mismatches=0
+sha256_compress_96324.xag                        pass vectors=100004 mismatches=0
+sha256_compress_100658.xag                       pass vectors=100004 mismatches=0
+proofbase/sha256_compress_96273_proofbase.xag    pass vectors=100004 mismatches=0
+proofbase/sha256_compress_96324_proofbase.xag    pass vectors=100004 mismatches=0
+proofbase/walk_pass1.xag                         pass vectors=100004 mismatches=0
+ports/sha256_var_compress_103669.xag             pass vectors=100004 mismatches=0
+SIM OK

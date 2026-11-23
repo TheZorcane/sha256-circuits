@@ -1,0 +1,102 @@
+/*
+ * Fragment specifications for the compositional verifier of the SHA-256 circuits.
+ *
+ * NOTHING IN THIS FILE IS TRUSTED.  These are intermediate functions:
+ *   - theorems F*   prove each reference fragment circuit (sharef.lemma_apply) equal to a lem_* function
+ *     built from the functions below (Lemmas_*.cry, generated);
+ *   - theorem W_I   proves the composition of those lem_* functions over the verifier's wiring equal to
+ *     Galois's SHA2Internal processBlock_Common (standard IV, every 512-bit block), and
+ *   - theorems B_S  prove the same composition equal to Galois's SHA2::Specification `hash` on every
+ *     message of 0..447 bits (one padded block).
+ * So a typo here (a wrong rotation amount, a wrong K entry, ...) cannot produce a false end-to-end claim;
+ * it would make W_I / B_S fail.
+ *
+ * The word functions are written character-for-character in the form of the w == 32 branches of
+ * Primitive/Keyless/Hash/SHA2/Specification.cry (ROTR/SHR via >>> and >>, Sigma0/1, sigma0/1, Ch, Maj,
+ * the variableUpdate step and the messageSchedule sum order).  We do not call SHA2Internal's exported
+ * S0/S1/s0/s1/Ch/Maj because SAW translates them (they are typed over the functor parameter `wp`) into
+ * bit-by-bit terms, which prevents the solver from matching them against the Specification's word terms;
+ * SHA2Internal is still used, as the target of theorem W_I.
+ */
+module Frag where
+
+import Primitive::Keyless::Hash::SHA2Internal::SHA256 as SHAI
+
+ROTR : {n} (n < 32) => [32] -> [32]
+ROTR x = x >>> `n
+
+SHR : {n} (n < 32) => [32] -> [32]
+SHR x = x >> `n
+
+Ch : [32] -> [32] -> [32] -> [32]
+Ch x y z = (x && y) ^ (~x && z)
+
+Maj : [32] -> [32] -> [32] -> [32]
+Maj x y z = (x && y) ^ (x && z) ^ (y && z)
+
+Sigma0 : [32] -> [32]
+Sigma0 x = ROTR`{ 2} x ^ ROTR`{13} x ^ ROTR`{22} x
+
+Sigma1 : [32] -> [32]
+Sigma1 x = ROTR`{ 6} x ^ ROTR`{11} x ^ ROTR`{25} x
+
+sigma0 : [32] -> [32]
+sigma0 x = ROTR`{7} x ^ ROTR`{18} x ^ SHR`{3} x
+
+sigma1 : [32] -> [32]
+sigma1 x = ROTR`{17} x ^ ROTR`{19} x ^ SHR`{10} x
+
+/** W_t = sigma1(W_{t-2}) + W_{t-7} + sigma0(W_{t-15}) + W_{t-16}: the Specification's messageSchedule
+    order (`sigma1 w2 + w7 + sigma0 w15 + w16`), also the order of sharef.sched_step. */
+schedStep : [32] -> [32] -> [32] -> [32] -> [32]
+schedStep w2 w7 w15 w16 = sigma1 w2 + w7 + sigma0 w15 + w16
+
+/** One round, as the Specification's variableUpdate.  state = (a,b,c,d,e,f,g,h); returns (a', e'); the
+    other new words are the shifts b'=a, c'=b, d'=c, f'=e, g'=f, h'=g. */
+roundStep : [8][32] -> [32] -> [32] -> ([32], [32])
+roundStep [a, b, c, d, e, f, g, h] Kt Wt = (T1 + T2, d + T1)
+  where
+    T1 = h + Sigma1 e + Ch e f g + Kt + Wt
+    T2 = Sigma0 a + Maj a b c
+
+/** Feed-forward word, as the Specification's step 4 (`a + Hi0`, ...). */
+finalAdd : [32] -> [32] -> [32]
+finalAdd hin x = x + hin
+
+/** Round constants (FIPS 180-4 4.2.2).  Intermediate; validated by W_I / B_S. */
+K : [64][32]
+K = [ 0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1, 0x923f82a4, 0xab1c5ed5,
+      0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3, 0x72be5d74, 0x80deb1fe, 0x9bdc06a7, 0xc19bf174,
+      0xe49b69c1, 0xefbe4786, 0x0fc19dc6, 0x240ca1cc, 0x2de92c6f, 0x4a7484aa, 0x5cb0a9dc, 0x76f988da,
+      0x983e5152, 0xa831c66d, 0xb00327c8, 0xbf597fc7, 0xc6e00bf3, 0xd5a79147, 0x06ca6351, 0x14292967,
+      0x27b70a85, 0x2e1b2138, 0x4d2c6dfc, 0x53380d13, 0x650a7354, 0x766a0abb, 0x81c2c92e, 0x92722c85,
+      0xa2bfe8a1, 0xa81a664b, 0xc24b8b70, 0xc76c51a3, 0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070,
+      0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5, 0x391c0cb3, 0x4ed8aa4a, 0x5b9cca4f, 0x682e6ff3,
+      0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208, 0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2]
+
+/** Standard IV, taken from Galois's SHA2Internal module (exported as SHAH0). */
+IV : [8][32]
+IV = SHAI::SHAH0
+
+/** One round step returning the shifted 8-word state. */
+fullRound : [8][32] -> [32] -> [32] -> [8][32]
+fullRound st kt wt = [a2, st@0, st@1, st@2, e2, st@4, st@5, st@6]
+  where (a2, e2) = roundStep st kt wt
+
+/** Fused tail (sharef.tail_apply): a61..a58, e61..e58, W60,W55,W47,W46, W61,W56,W48 -> out0..7 */
+tailFn : [8][32] -> [32] -> [32] -> [32] -> [32] -> [32] -> [32] -> [32] -> [8][32]
+tailFn st w60 w55 w47 w46 w61 w56 w48 = [finalAdd (IV @ k) (s63 @ k) | k <- [0 .. 7 : [4]]]
+  where
+    w62 = schedStep w60 w55 w47 w46
+    w63 = schedStep w61 w56 w48 w47
+    s62 = fullRound st (K @ (62 : [8])) w62
+    s63 = fullRound s62 (K @ (63 : [8])) w63
+
+/** Split tail, first half (sharef.r62f_apply): a61..a58, e61..e58, W60,W55,W47,W46 -> (a62, e62) */
+r62fFn : [8][32] -> [32] -> [32] -> [32] -> [32] -> ([32], [32])
+r62fFn st w60 w55 w47 w46 = roundStep st (K @ (62 : [8])) (schedStep w60 w55 w47 w46)
+
+/** Split tail, second half (sharef.tail2_apply): a62..a59, e62..e59, W61,W56,W48,W47 -> out0..7 */
+tail2Fn : [8][32] -> [32] -> [32] -> [32] -> [32] -> [8][32]
+tail2Fn st w61 w56 w48 w47 = [finalAdd (IV @ k) (s63 @ k) | k <- [0 .. 7 : [4]]]
+  where s63 = fullRound st (K @ (63 : [8])) (schedStep w61 w56 w48 w47)

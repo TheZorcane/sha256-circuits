@@ -1,0 +1,332 @@
+# run_saw: <artifact>/fips_spec_proof/build/tail/frags_I.saw budget=3600s start=2026-11-20 16:13:52
+Loading file "frags_I.saw"
+FI_tail_sched_16: aig(sharef.lemma_apply ('sched', 16)) == lem_sched_16  [128 -> 32 bits]
+Time: 0.157304s
+PROVED FI_tail_sched_16
+FI_tail_sched_17: aig(sharef.lemma_apply ('sched', 17)) == lem_sched_17  [128 -> 32 bits]
+Time: 0.15203s
+PROVED FI_tail_sched_17
+FI_tail_sched_18: aig(sharef.lemma_apply ('sched', 18)) == lem_sched_18  [128 -> 32 bits]
+Time: 0.159914s
+PROVED FI_tail_sched_18
+FI_tail_sched_19: aig(sharef.lemma_apply ('sched', 19)) == lem_sched_19  [128 -> 32 bits]
+Time: 0.161658s
+PROVED FI_tail_sched_19
+FI_tail_sched_20: aig(sharef.lemma_apply ('sched', 20)) == lem_sched_20  [128 -> 32 bits]
+Time: 0.154684s
+PROVED FI_tail_sched_20
+FI_tail_sched_21: aig(sharef.lemma_apply ('sched', 21)) == lem_sched_21  [128 -> 32 bits]
+Time: 0.155798s
+PROVED FI_tail_sched_21
+FI_tail_sched_22: aig(sharef.lemma_apply ('sched', 22)) == lem_sched_22  [128 -> 32 bits]
+Time: 0.155977s
+PROVED FI_tail_sched_22
+FI_tail_sched_23: aig(sharef.lemma_apply ('sched', 23)) == lem_sched_23  [128 -> 32 bits]
+Time: 0.16079s
+PROVED FI_tail_sched_23
+FI_tail_sched_24: aig(sharef.lemma_apply ('sched', 24)) == lem_sched_24  [128 -> 32 bits]
+Time: 0.163687s
+PROVED FI_tail_sched_24
+FI_tail_sched_25: aig(sharef.lemma_apply ('sched', 25)) == lem_sched_25  [128 -> 32 bits]
+Time: 0.161373s
+PROVED FI_tail_sched_25
+FI_tail_sched_26: aig(sharef.lemma_apply ('sched', 26)) == lem_sched_26  [128 -> 32 bits]
+Time: 0.162168s
+PROVED FI_tail_sched_26
+FI_tail_sched_27: aig(sharef.lemma_apply ('sched', 27)) == lem_sched_27  [128 -> 32 bits]
+Time: 0.166149s
+PROVED FI_tail_sched_27
+FI_tail_sched_28: aig(sharef.lemma_apply ('sched', 28)) == lem_sched_28  [128 -> 32 bits]
+Time: 0.16627s
+PROVED FI_tail_sched_28
+FI_tail_sched_29: aig(sharef.lemma_apply ('sched', 29)) == lem_sched_29  [128 -> 32 bits]
+Time: 0.166615s
+PROVED FI_tail_sched_29
+FI_tail_sched_30: aig(sharef.lemma_apply ('sched', 30)) == lem_sched_30  [128 -> 32 bits]
+Time: 0.163124s
+PROVED FI_tail_sched_30
+FI_tail_sched_31: aig(sharef.lemma_apply ('sched', 31)) == lem_sched_31  [128 -> 32 bits]
+Time: 0.168617s
+PROVED FI_tail_sched_31
+FI_tail_sched_32: aig(sharef.lemma_apply ('sched', 32)) == lem_sched_32  [128 -> 32 bits]
+Time: 0.163551s
+PROVED FI_tail_sched_32
+FI_tail_sched_33: aig(sharef.lemma_apply ('sched', 33)) == lem_sched_33  [128 -> 32 bits]
+Time: 0.161748s
+PROVED FI_tail_sched_33
+FI_tail_sched_34: aig(sharef.lemma_apply ('sched', 34)) == lem_sched_34  [128 -> 32 bits]
+Time: 0.163124s
+PROVED FI_tail_sched_34
+FI_tail_sched_35: aig(sharef.lemma_apply ('sched', 35)) == lem_sched_35  [128 -> 32 bits]
+Time: 0.164945s
+PROVED FI_tail_sched_35
+FI_tail_sched_36: aig(sharef.lemma_apply ('sched', 36)) == lem_sched_36  [128 -> 32 bits]
+Time: 0.212389s
+PROVED FI_tail_sched_36
+FI_tail_sched_37: aig(sharef.lemma_apply ('sched', 37)) == lem_sched_37  [128 -> 32 bits]
+Time: 0.189012s
+PROVED FI_tail_sched_37
+FI_tail_sched_38: aig(sharef.lemma_apply ('sched', 38)) == lem_sched_38  [128 -> 32 bits]
+Time: 0.192067s
+PROVED FI_tail_sched_38
+FI_tail_sched_39: aig(sharef.lemma_apply ('sched', 39)) == lem_sched_39  [128 -> 32 bits]
+Time: 0.167812s
+PROVED FI_tail_sched_39
+FI_tail_sched_40: aig(sharef.lemma_apply ('sched', 40)) == lem_sched_40  [128 -> 32 bits]
+Time: 0.19794s
+PROVED FI_tail_sched_40
+FI_tail_sched_41: aig(sharef.lemma_apply ('sched', 41)) == lem_sched_41  [128 -> 32 bits]
+Time: 0.189793s
+PROVED FI_tail_sched_41
+FI_tail_sched_42: aig(sharef.lemma_apply ('sched', 42)) == lem_sched_42  [128 -> 32 bits]
+Time: 0.161833s
+PROVED FI_tail_sched_42
+FI_tail_sched_43: aig(sharef.lemma_apply ('sched', 43)) == lem_sched_43  [128 -> 32 bits]
+Time: 0.162556s
+PROVED FI_tail_sched_43
+FI_tail_sched_44: aig(sharef.lemma_apply ('sched', 44)) == lem_sched_44  [128 -> 32 bits]
+Time: 0.188804s
+PROVED FI_tail_sched_44
+FI_tail_sched_45: aig(sharef.lemma_apply ('sched', 45)) == lem_sched_45  [128 -> 32 bits]
+Time: 0.190037s
+PROVED FI_tail_sched_45
+FI_tail_sched_46: aig(sharef.lemma_apply ('sched', 46)) == lem_sched_46  [128 -> 32 bits]
+Time: 0.160881s
+PROVED FI_tail_sched_46
+FI_tail_sched_47: aig(sharef.lemma_apply ('sched', 47)) == lem_sched_47  [128 -> 32 bits]
+Time: 0.20219s
+PROVED FI_tail_sched_47
+FI_tail_sched_48: aig(sharef.lemma_apply ('sched', 48)) == lem_sched_48  [128 -> 32 bits]
+Time: 0.190588s
+PROVED FI_tail_sched_48
+FI_tail_sched_49: aig(sharef.lemma_apply ('sched', 49)) == lem_sched_49  [128 -> 32 bits]
+Time: 0.157362s
+PROVED FI_tail_sched_49
+FI_tail_sched_50: aig(sharef.lemma_apply ('sched', 50)) == lem_sched_50  [128 -> 32 bits]
+Time: 0.185931s
+PROVED FI_tail_sched_50
+FI_tail_sched_51: aig(sharef.lemma_apply ('sched', 51)) == lem_sched_51  [128 -> 32 bits]
+Time: 0.157355s
+PROVED FI_tail_sched_51
+FI_tail_sched_52: aig(sharef.lemma_apply ('sched', 52)) == lem_sched_52  [128 -> 32 bits]
+Time: 0.159478s
+PROVED FI_tail_sched_52
+FI_tail_sched_53: aig(sharef.lemma_apply ('sched', 53)) == lem_sched_53  [128 -> 32 bits]
+Time: 0.189815s
+PROVED FI_tail_sched_53
+FI_tail_sched_54: aig(sharef.lemma_apply ('sched', 54)) == lem_sched_54  [128 -> 32 bits]
+Time: 0.187514s
+PROVED FI_tail_sched_54
+FI_tail_sched_55: aig(sharef.lemma_apply ('sched', 55)) == lem_sched_55  [128 -> 32 bits]
+Time: 0.161001s
+PROVED FI_tail_sched_55
+FI_tail_sched_56: aig(sharef.lemma_apply ('sched', 56)) == lem_sched_56  [128 -> 32 bits]
+Time: 0.189894s
+PROVED FI_tail_sched_56
+FI_tail_sched_57: aig(sharef.lemma_apply ('sched', 57)) == lem_sched_57  [128 -> 32 bits]
+Time: 0.159824s
+PROVED FI_tail_sched_57
+FI_tail_sched_58: aig(sharef.lemma_apply ('sched', 58)) == lem_sched_58  [128 -> 32 bits]
+Time: 0.187701s
+PROVED FI_tail_sched_58
+FI_tail_sched_59: aig(sharef.lemma_apply ('sched', 59)) == lem_sched_59  [128 -> 32 bits]
+Time: 0.191677s
+PROVED FI_tail_sched_59
+FI_tail_sched_60: aig(sharef.lemma_apply ('sched', 60)) == lem_sched_60  [128 -> 32 bits]
+Time: 0.164031s
+PROVED FI_tail_sched_60
+FI_tail_sched_61: aig(sharef.lemma_apply ('sched', 61)) == lem_sched_61  [128 -> 32 bits]
+Time: 0.196083s
+PROVED FI_tail_sched_61
+FI_tail_round_0: aig(sharef.lemma_apply ('round', 0)) == lem_round_0  [32 -> 64 bits]
+Time: 0.036371s
+PROVED FI_tail_round_0
+FI_tail_round_1: aig(sharef.lemma_apply ('round', 1)) == lem_round_1  [96 -> 64 bits]
+Time: 0.717653s
+PROVED FI_tail_round_1
+FI_tail_round_2: aig(sharef.lemma_apply ('round', 2)) == lem_round_2  [160 -> 64 bits]
+Time: 1.161574s
+PROVED FI_tail_round_2
+FI_tail_round_3: aig(sharef.lemma_apply ('round', 3)) == lem_round_3  [224 -> 64 bits]
+Time: 1.189844s
+PROVED FI_tail_round_3
+FI_tail_round_4: aig(sharef.lemma_apply ('round', 4)) == lem_round_4  [288 -> 64 bits]
+Time: 1.717688s
+PROVED FI_tail_round_4
+FI_tail_round_5: aig(sharef.lemma_apply ('round', 5)) == lem_round_5  [288 -> 64 bits]
+Time: 3.196573s
+PROVED FI_tail_round_5
+FI_tail_round_6: aig(sharef.lemma_apply ('round', 6)) == lem_round_6  [288 -> 64 bits]
+Time: 2.945066s
+PROVED FI_tail_round_6
+FI_tail_round_7: aig(sharef.lemma_apply ('round', 7)) == lem_round_7  [288 -> 64 bits]
+Time: 2.75809s
+PROVED FI_tail_round_7
+FI_tail_round_8: aig(sharef.lemma_apply ('round', 8)) == lem_round_8  [288 -> 64 bits]
+Time: 2.187839s
+PROVED FI_tail_round_8
+FI_tail_round_9: aig(sharef.lemma_apply ('round', 9)) == lem_round_9  [288 -> 64 bits]
+Time: 2.493891s
+PROVED FI_tail_round_9
+FI_tail_round_10: aig(sharef.lemma_apply ('round', 10)) == lem_round_10  [288 -> 64 bits]
+Time: 3.544234s
+PROVED FI_tail_round_10
+FI_tail_round_11: aig(sharef.lemma_apply ('round', 11)) == lem_round_11  [288 -> 64 bits]
+Time: 3.241292s
+PROVED FI_tail_round_11
+FI_tail_round_12: aig(sharef.lemma_apply ('round', 12)) == lem_round_12  [288 -> 64 bits]
+Time: 2.873091s
+PROVED FI_tail_round_12
+FI_tail_round_13: aig(sharef.lemma_apply ('round', 13)) == lem_round_13  [288 -> 64 bits]
+Time: 2.52519s
+PROVED FI_tail_round_13
+FI_tail_round_14: aig(sharef.lemma_apply ('round', 14)) == lem_round_14  [288 -> 64 bits]
+Time: 2.956877s
+PROVED FI_tail_round_14
+FI_tail_round_15: aig(sharef.lemma_apply ('round', 15)) == lem_round_15  [288 -> 64 bits]
+Time: 2.707539s
+PROVED FI_tail_round_15
+FI_tail_round_16: aig(sharef.lemma_apply ('round', 16)) == lem_round_16  [288 -> 64 bits]
+Time: 2.77016s
+PROVED FI_tail_round_16
+FI_tail_round_17: aig(sharef.lemma_apply ('round', 17)) == lem_round_17  [288 -> 64 bits]
+Time: 2.798825s
+PROVED FI_tail_round_17
+FI_tail_round_18: aig(sharef.lemma_apply ('round', 18)) == lem_round_18  [288 -> 64 bits]
+Time: 3.74265s
+PROVED FI_tail_round_18
+FI_tail_round_19: aig(sharef.lemma_apply ('round', 19)) == lem_round_19  [288 -> 64 bits]
+Time: 2.797129s
+PROVED FI_tail_round_19
+FI_tail_round_20: aig(sharef.lemma_apply ('round', 20)) == lem_round_20  [288 -> 64 bits]
+Time: 3.731388s
+PROVED FI_tail_round_20
+FI_tail_round_21: aig(sharef.lemma_apply ('round', 21)) == lem_round_21  [288 -> 64 bits]
+Time: 2.867685s
+PROVED FI_tail_round_21
+FI_tail_round_22: aig(sharef.lemma_apply ('round', 22)) == lem_round_22  [288 -> 64 bits]
+Time: 2.797273s
+PROVED FI_tail_round_22
+FI_tail_round_23: aig(sharef.lemma_apply ('round', 23)) == lem_round_23  [288 -> 64 bits]
+Time: 3.106127s
+PROVED FI_tail_round_23
+FI_tail_round_24: aig(sharef.lemma_apply ('round', 24)) == lem_round_24  [288 -> 64 bits]
+Time: 3.174715s
+PROVED FI_tail_round_24
+FI_tail_round_25: aig(sharef.lemma_apply ('round', 25)) == lem_round_25  [288 -> 64 bits]
+Time: 3.749148s
+PROVED FI_tail_round_25
+FI_tail_round_26: aig(sharef.lemma_apply ('round', 26)) == lem_round_26  [288 -> 64 bits]
+Time: 3.463257s
+PROVED FI_tail_round_26
+FI_tail_round_27: aig(sharef.lemma_apply ('round', 27)) == lem_round_27  [288 -> 64 bits]
+Time: 3.084523s
+PROVED FI_tail_round_27
+FI_tail_round_28: aig(sharef.lemma_apply ('round', 28)) == lem_round_28  [288 -> 64 bits]
+Time: 2.66218s
+PROVED FI_tail_round_28
+FI_tail_round_29: aig(sharef.lemma_apply ('round', 29)) == lem_round_29  [288 -> 64 bits]
+Time: 2.863004s
+PROVED FI_tail_round_29
+FI_tail_round_30: aig(sharef.lemma_apply ('round', 30)) == lem_round_30  [288 -> 64 bits]
+Time: 2.331182s
+PROVED FI_tail_round_30
+FI_tail_round_31: aig(sharef.lemma_apply ('round', 31)) == lem_round_31  [288 -> 64 bits]
+Time: 2.137003s
+PROVED FI_tail_round_31
+FI_tail_round_32: aig(sharef.lemma_apply ('round', 32)) == lem_round_32  [288 -> 64 bits]
+Time: 3.104353s
+PROVED FI_tail_round_32
+FI_tail_round_33: aig(sharef.lemma_apply ('round', 33)) == lem_round_33  [288 -> 64 bits]
+Time: 3.106454s
+PROVED FI_tail_round_33
+FI_tail_round_34: aig(sharef.lemma_apply ('round', 34)) == lem_round_34  [288 -> 64 bits]
+Time: 2.772487s
+PROVED FI_tail_round_34
+FI_tail_round_35: aig(sharef.lemma_apply ('round', 35)) == lem_round_35  [288 -> 64 bits]
+Time: 2.656813s
+PROVED FI_tail_round_35
+FI_tail_round_36: aig(sharef.lemma_apply ('round', 36)) == lem_round_36  [288 -> 64 bits]
+Time: 2.995719s
+PROVED FI_tail_round_36
+FI_tail_round_37: aig(sharef.lemma_apply ('round', 37)) == lem_round_37  [288 -> 64 bits]
+Time: 3.414342s
+PROVED FI_tail_round_37
+FI_tail_round_38: aig(sharef.lemma_apply ('round', 38)) == lem_round_38  [288 -> 64 bits]
+Time: 2.691113s
+PROVED FI_tail_round_38
+FI_tail_round_39: aig(sharef.lemma_apply ('round', 39)) == lem_round_39  [288 -> 64 bits]
+Time: 2.702923s
+PROVED FI_tail_round_39
+FI_tail_round_40: aig(sharef.lemma_apply ('round', 40)) == lem_round_40  [288 -> 64 bits]
+Time: 3.063491s
+PROVED FI_tail_round_40
+FI_tail_round_41: aig(sharef.lemma_apply ('round', 41)) == lem_round_41  [288 -> 64 bits]
+Time: 2.839255s
+PROVED FI_tail_round_41
+FI_tail_round_42: aig(sharef.lemma_apply ('round', 42)) == lem_round_42  [288 -> 64 bits]
+Time: 2.427393s
+PROVED FI_tail_round_42
+FI_tail_round_43: aig(sharef.lemma_apply ('round', 43)) == lem_round_43  [288 -> 64 bits]
+Time: 3.261907s
+PROVED FI_tail_round_43
+FI_tail_round_44: aig(sharef.lemma_apply ('round', 44)) == lem_round_44  [288 -> 64 bits]
+Time: 2.280933s
+PROVED FI_tail_round_44
+FI_tail_round_45: aig(sharef.lemma_apply ('round', 45)) == lem_round_45  [288 -> 64 bits]
+Time: 2.552067s
+PROVED FI_tail_round_45
+FI_tail_round_46: aig(sharef.lemma_apply ('round', 46)) == lem_round_46  [288 -> 64 bits]
+Time: 3.110059s
+PROVED FI_tail_round_46
+FI_tail_round_47: aig(sharef.lemma_apply ('round', 47)) == lem_round_47  [288 -> 64 bits]
+Time: 3.926698s
+PROVED FI_tail_round_47
+FI_tail_round_48: aig(sharef.lemma_apply ('round', 48)) == lem_round_48  [288 -> 64 bits]
+Time: 2.66393s
+PROVED FI_tail_round_48
+FI_tail_round_49: aig(sharef.lemma_apply ('round', 49)) == lem_round_49  [288 -> 64 bits]
+Time: 2.721462s
+PROVED FI_tail_round_49
+FI_tail_round_50: aig(sharef.lemma_apply ('round', 50)) == lem_round_50  [288 -> 64 bits]
+Time: 2.345733s
+PROVED FI_tail_round_50
+FI_tail_round_51: aig(sharef.lemma_apply ('round', 51)) == lem_round_51  [288 -> 64 bits]
+Time: 2.579291s
+PROVED FI_tail_round_51
+FI_tail_round_52: aig(sharef.lemma_apply ('round', 52)) == lem_round_52  [288 -> 64 bits]
+Time: 2.878918s
+PROVED FI_tail_round_52
+FI_tail_round_53: aig(sharef.lemma_apply ('round', 53)) == lem_round_53  [288 -> 64 bits]
+Time: 3.076446s
+PROVED FI_tail_round_53
+FI_tail_round_54: aig(sharef.lemma_apply ('round', 54)) == lem_round_54  [288 -> 64 bits]
+Time: 3.197608s
+PROVED FI_tail_round_54
+FI_tail_round_55: aig(sharef.lemma_apply ('round', 55)) == lem_round_55  [288 -> 64 bits]
+Time: 3.162947s
+PROVED FI_tail_round_55
+FI_tail_round_56: aig(sharef.lemma_apply ('round', 56)) == lem_round_56  [288 -> 64 bits]
+Time: 3.45744s
+PROVED FI_tail_round_56
+FI_tail_round_57: aig(sharef.lemma_apply ('round', 57)) == lem_round_57  [288 -> 64 bits]
+Time: 1.781295s
+PROVED FI_tail_round_57
+FI_tail_round_58: aig(sharef.lemma_apply ('round', 58)) == lem_round_58  [288 -> 64 bits]
+Time: 3.489231s
+PROVED FI_tail_round_58
+FI_tail_round_59: aig(sharef.lemma_apply ('round', 59)) == lem_round_59  [288 -> 64 bits]
+Time: 2.979035s
+PROVED FI_tail_round_59
+FI_tail_round_60: aig(sharef.lemma_apply ('round', 60)) == lem_round_60  [288 -> 64 bits]
+Time: 3.529092s
+PROVED FI_tail_round_60
+FI_tail_round_61: aig(sharef.lemma_apply ('round', 61)) == lem_round_61  [288 -> 64 bits]
+Time: 3.344441s
+PROVED FI_tail_round_61
+FI_tail_tail_0: aig(sharef.lemma_apply ('tail', 0)) == lem_tail_0  [480 -> 256 bits]
+Time: 88.512505s
+PROVED FI_tail_tail_0
+ALL 109 FRAGMENT THEOREMS FI PROVED FOR VARIANT tail
+
+# run_saw: exit=0 wall=275.8s

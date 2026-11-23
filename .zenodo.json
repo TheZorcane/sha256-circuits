@@ -1,0 +1,12 @@
+{
+  "title": "Artifact: Smaller verified Boolean circuits for SHA-256",
+  "upload_type": "software",
+  "creators": [
+    {"name": "Rosenbaum, Ido"}
+  ],
+  "description": "Circuits, verifier, generators, proof manifests and SAW/Cryptol scripts for the paper \"Smaller verified Boolean circuits for SHA-256\". Contains three fixed-IV SHA-256 compression circuits (96,273, 96,324 and 100,658 AND+XOR gates, NOT free; also in Bristol Fashion format), a variable-chaining-value SHA-256 circuit and a SHA-1 circuit, the compositional SAT/LRAT verifier with a strict LRAT checker, the twin-cut certificates for linear-layer rewrites, and the SAW proofs linking the verifier's reference to Galois's Cryptol SHA-256 specification. reproduce.sh runs the quick checks in about 7 minutes on a laptop.",
+  "license": "cc-by-4.0",
+  "keywords": ["SHA-256", "Boolean circuits", "multiplicative complexity", "AND gates", "secure computation", "zero-knowledge proofs", "formal verification", "SAT", "LRAT", "SAW"],
+  "notes": "Licensing: CC BY 4.0 for documentation, circuits and data; MIT for the code written for this artifact; vendored drat-trim sources keep their own license (see LICENSE).",
+  "version": "1.0.0"
+}

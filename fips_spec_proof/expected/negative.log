@@ -1,0 +1,11 @@
+# run_saw: <artifact>/fips_spec_proof/build/negative.saw budget=600s start=2026-11-20 16:19:32
+Loading file "negative.saw"
+counterexample found (expected):
+243424944168600936363333151944032567477208653688391164815952584105579770803153987639824
+mutant output / spec output / real-fragment output at the counterexample:
+6941523973002922432
+6941541565188970944
+6941541565188970944
+NEGATIVE CONTROL OK: mutant rejected with a genuine counterexample
+
+# run_saw: exit=0 wall=1.9s

@@ -1,0 +1,6 @@
+lincheck 96273: PASS: outputs 256 identical as affine forms; REF ANDs 21783, NEW ANDs 21783, distinct REF ANDs matched 21783, with re-chosen operand pair 8445; NEW XORs 74490; ANDs equal to their matched REF AND (zero correction) 21783 of 21783
+check2 96273: PASS
+lincheck 96324: PASS: outputs 256 identical as affine forms; REF ANDs 21746, NEW ANDs 21746, distinct REF ANDs matched 21746, with re-chosen operand pair 7612; NEW XORs 74578; ANDs equal to their matched REF AND (zero correction) 21746 of 21746
+check2 96324: PASS
+4 of 4 checks passed
+GF2 ALL PASS

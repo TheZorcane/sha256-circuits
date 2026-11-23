@@ -1,0 +1,5 @@
+sha256_var_104023.xag {"AND": 22293, "XOR": 81730, "total": 104023, "depth": 5914, "and_depth": 1607, "max_fanout_node": 13, "max_fanout_input": 12, "serialized_bytes": 1546615, "sha256": "101ffee98c43ffae6bc1b9b9d7329467727c1d25ee8b079bd34310b20359984e", "canonical_input": true}
+{"file": "<artifact>/out/varcv/sha256_var_104023.xag", "ws": 32, "fixed_iv": false, "vectors": 10000, "seed": 12345, "mismatches": 0, "status": "pass", "seconds": 1.8}
+lincheck: PASS: outputs 256 identical as affine forms; REF ANDs 22293, NEW ANDs 22293, distinct REF ANDs matched 22293, with re-chosen operand pair 10285; NEW XORs 81376; ANDs equal to their matched REF AND (zero correction) 22293 of 22293
+check2: PASS
+VARCV OK
