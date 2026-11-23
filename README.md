@@ -5,7 +5,7 @@ the vendored drat-trim sources in `verifier/vendor/` keep their own license, `ve
 
 - Paper: Ido Rosenbaum, *Smaller verified Boolean circuits for SHA-256*, IACR Cryptology ePrint Archive
   2026/EPRINT_ID.
-- Archived version of this artifact: https://doi.org/ZENODO_DOI
+- Archived version of this artifact: https://doi.org/10.5281/zenodo.24469445
 - Cite: see `CITATION.cff`.
 
 Quick start: `sh reproduce.sh` (about 7 minutes on a laptop; needs Python 3, a C compiler and CaDiCaL 3.x;

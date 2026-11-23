@@ -6,6 +6,8 @@ authors:
   - family-names: Rosenbaum
     given-names: Ido
 version: "1.0.0"
+doi: 10.5281/zenodo.24469445
+repository-code: "https://github.com/TheZorcane/sha256-circuits"
 date-released: 2026-11-23
 license: [MIT, CC-BY-4.0]
 keywords:
